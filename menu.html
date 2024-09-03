@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Author: Ama Agyemang
+    Date:   04/1/2024  -->
+
+    <head>
+            <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Mediterranean Kitchen</title>
+    
+            <style>
+                   
+            html {
+                background-image: url("https://www.theburn.com/wp-content/uploads/2023/04/272762560_10159445077185102_3961836220427375278_n-e1682464831674.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                }
+           
+            header {
+                background-color: white;
+                height: 220px;
+                padding: 10px;
+               
+            }
+            header >img {
+                position:absolute;
+                margin-top: 20px;
+            }
+             ul{
+                display: flex;
+                justify-content:center;
+                margin-top: 170px;
+                padding: 0;
+    list-style: none;
+                
+            }
+             li {
+                list-style: none;
+                
+            }
+            @font-face {
+                font-family:Greek-Freak ;
+                src: url(fonts/Greek-Freak.ttf);
+            }
+            a {
+                text-decoration:none;
+                margin-left: 150px;
+                font-family:Greek-Freak ;
+                font-size: 30px;
+                letter-spacing: 2x;   
+            }
+            a:link {
+                color: rgb(58, 109, 57);
+            }
+            a:visited {
+                color: rgb(58, 109, 57);
+            }
+            a:hover {
+                color: rgb(180, 133, 63);
+            }
+
+            .menu {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                margin: 80px 40px ;
+                gap: 50px;
+            }
+                h2 {
+                    font-family: Greek-Freak;
+                    text-align: center;
+                    letter-spacing: 2px;
+                    color: rgb(58, 109, 57);
+                }
+            
+            .breakfast, .lunch, .dinner {
+              
+                background-color: white; 
+                margin-top: 50px;
+                margin-bottom: 80px;
+                padding: 20px 20px 90px 20px;
+                border-radius: 20px;
+            }
+
+            .breakfast, .lunch, .dinner > p {
+                font-family: 'Courier New', Courier, monospace;
+                text-align: center;
+                color: rgb(180, 133, 63);
+            }
+             .dinner  > hr {
+                width: 200px;
+            }
+            .breakfast > hr {
+                width:200px;
+            }
+            .lunch > hr {
+                width: 350px;
+            }
+            .footer {
+                background-color: white;
+                height: 270px;
+                padding: 10px;
+                margin-top: 50px;
+            }
+            .footer_text {
+                padding-top: 10px;
+                display: block;
+                margin: auto;
+               
+            }
+               .copyright {
+                clear: left;
+                padding-top: 50px;
+               }
+                hr {
+                    width: 650px;
+                }
+            .footer_img > img {
+               
+                margin-left: 50px;
+                height: 15%;
+                width: 15%;
+                position: relative;
+                top: -50px;
+                
+
+               
+
+            }
+
+            </style>
+    </head>
+    <header>
+         <img src="data:image/png;base64,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" alt=""/>
+        <nav>
+            <ul>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+      
+        <div class="menu">
+
+        <div class="breakfast">
+            <h2>Breakfast</h2>
+            
+                <p>Avgolemono (egg-lemon soup)</p>
+                <p>Bougatsa (pastry with custard filling)</p>
+                <p>Buttered Bread With Honey</p>
+                <p>Eggs with Feta, Tomatoes, Basil, and Fresh Bread</p>
+                <hr>
+            
+
+        </div>
+        <div class="lunch"><h2>Lunch</h2>
+
+        <p>Chicken, Lamb, or Falafel Gyro</p>
+        <p>Moussaka (Eggplant or Potato Base with Ground Beef)</p>
+        <p>Greek Salad (Salad Dressed with Salt, Greek Oregano, Lemon Juice and Olive Oil.)</p>
+        <p>Spanakopita (Spinach Pie)</p>
+        <hr>
+    </div>
+        <div class="dinner"><h2>Dinner</h2>
+            <p>Baklava (Pastry with Chopped Pistachios and Honey)</p>
+            <p>Fasolada (Bean and Vegetable Soup)</p>
+            <p>Lamb Souvlaki (Lamb Skewers)</p>
+            <p>Feta Me Meli (Feta Baked with Honey)</p>
+            <hr>
+        </div>
+    </div>
+    <footer>
+
+        <div class="footer">
+            
+            <div class="footer_text">
+        <center>Contact Us</center><br/>
+        <center>Phone: 123-456-7890</center><br/>
+        <center>Email: <mailto>info@mediterraneanrestaurant.com</mailto></center><br/>
+        
+        <address>
+            <center>123 Olive Grove Street, Burbank, CA</address></center>
+        </div>
+        
+                <div class="copyright">
+                    <hr>
+                <center>© 2024 Mediterranean Kitchen. All rights reserved</center>
+            </div>
+            <div class="footer_img">
+                <img src="data:image/png;base64,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" alt=""/>
+               </div>
+        </div>
+        
+        </footer>
+    </body>
+    </html>

@@ -1,0 +1,73 @@
+
+
+
+/* HTML Layout */
+
+
+html {
+    
+     background-image: url("https://www.theburn.com/wp-content/uploads/2023/04/272762560_10159445077185102_3961836220427375278_n-e1682464831674.jpg");
+     opacity: 0.8;
+     background-size: cover;
+}
+/*Top Navigation*/
+#navbar {
+    background-color: gray;
+    opacity: 0.8;
+    width: 100%;
+    height: 50px;
+    padding-bottom: 10px;
+    
+}
+    #navbar a {
+        text-decoration: none;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 25px;
+        color: black;
+        display: inline-block;
+        margin: ;
+        
+    }
+    #navbar a:hover {
+        color: aliceblue;
+    }
+    
+   body > img {
+        height:195px;
+        width:200px;
+    }
+
+ul {
+    list-style-type: none;
+}
+li {
+    display: inline;
+    float:right;
+    margin-left: 75px;
+    margin-right: 50px;
+    margin-top: 5px;
+    font-size: 35px;
+
+}
+  
+  /*middle*/
+  
+  .middle {
+    width: 425px;
+    height: 150px;
+    background-color: gray;
+    opacity: 0.8;
+    margin: 200px auto;
+  }
+  
+  @font-face {
+    font-family:'GreekFreak';
+    src: url(fonts/Greek-Freak.ttf);
+  }
+  
+  .middle > h1 {
+    text-align:center;
+    font-family:GreekFreak;
+  }
+  
+  
